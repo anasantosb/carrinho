@@ -45,14 +45,14 @@ function criarProduto(produto, index) {
         </div>
     </div>
     `;
-	//Esse bloco de código serve para exibir as informações dos produtos
+	// Esse bloco de código serve para exibir as informações dos produtos
 }
 
 // Seleciona o elemento com o id "container" na página
 const container = document.querySelector("#container"); // Variável container. 
 
 // Insere o HTML dos produtos no container
-container.innerHTML = renderizaProdutos(); //Com o uso do innerHTML será possível acessar e modificar o conteúdo
+container.innerHTML = renderizaProdutos(); // Com o uso do innerHTML será possível acessar e modificar o conteúdo
 
 const carrinhoItens = {}; // Constante vazia que será usada para adicionar ou modificar propriedades do objeto
 
@@ -76,7 +76,7 @@ function criaItemCarrinho(produto) {
         <button data-produto-id="${produto.id}" class="btn-remove"></button>
     </div>
     `;
-	//Esse bloco de HTML exibe as informações de algum item no carrinho: nome, preço, quantidade, valor total e botão para remover o item do carrinho quando necessário
+	// Esse bloco de HTML exibe as informações de algum item no carrinho: nome, preço, quantidade, valor total e botão para remover o item do carrinho quando necessário
 }
 
 // Função para calcular o total dos itens no carrinho e exibir o valor na página 
